@@ -83,11 +83,11 @@ a {
 }
 .main {
   position: relative;
+  min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../img/main/bg.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/main/bg.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
 }
 .main:before {
   content: '';
@@ -133,12 +133,12 @@ a {
 /*Media*/
 @media (max-width: 1399px) {
   .main-phone {
-    left: 90%;
+    left: 83%;
   }
 }
 @media (max-width: 1199px) {
   .main-phone {
-    left: 65%;
+    left: 60%;
   }
 }
 @media (max-width: 991px) {
@@ -163,8 +163,8 @@ a {
     height: 15rem;
   }
   .main-phone {
-    left: 50%;
-    top: 89%;
+    left: 46%;
+    top: 85%;
     width: 36rem;
     height: 28rem;
   }
@@ -176,58 +176,48 @@ a {
     height: 12rem;
   }
   .main-phone {
-    top: 85%;
+    top: 80%;
     width: 28rem;
     height: 22rem;
   }
 }
-/*
-@media(max-width:575px) {
-	.button {
-		padding: 1rem 2rem;
-		font-size: 1rem;
-	}
-
-	.header {
-		&-logo {
-			img {
-				width: 6rem;
-				height: 3rem;
-			}
-		}
-
-		&-delivery {
-			font-size: 1.2rem;
-		}
-
-		&-pohone {
-			font-size: 1.7rem;
-		}
-
-		&-call {
-			font-size: 1.4rem;
-		}
-	}
-
-	.main {
-		min-height: 50rem;
-		&-title {
-			font-size: 1.6rem;
-		}
-
-		&-subtitle {
-			font-size: 1rem;
-		}
-
-		&-vr {
-			width: 14rem;
-			height: 8rem;
-		}
-	
-		&-phone {
-			width: 16rem;
-			height: 16rem;
-		}
-	}
-
-}*/
+@media (max-width: 575px) {
+  .button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .header-logo img {
+    width: 6rem;
+    height: 3rem;
+  }
+  .header-delivery {
+    font-size: 1.2rem;
+  }
+  .header-pohone {
+    font-size: 1.7rem;
+  }
+  .header-call {
+    font-size: 1.4rem;
+  }
+  .main {
+    background-position: left right;
+  }
+  .main-content {
+    padding-top: 15rem;
+  }
+  .main-title {
+    font-size: 1.6rem;
+  }
+  .main-subtitle {
+    font-size: 1rem;
+  }
+  .main-vr {
+    width: 14rem;
+    height: 8rem;
+  }
+  .main-phone {
+    left: 60%;
+    width: 16rem;
+    height: 16rem;
+  }
+}

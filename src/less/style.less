@@ -120,10 +120,11 @@ a {
 
 .main {
 	position: relative;
+	min-height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/main/bg.jpg');
 	background-size: cover;
 	background-position: center;
-	min-height: 100vh;
+	
 
 	&:before {
 		content: '';
@@ -177,7 +178,7 @@ a {
 @media(max-width:1399px) {
 	.main {
 		&-phone {
-			left: 90%;
+			left: 83%;
 		}
 	}
 }
@@ -185,7 +186,7 @@ a {
 @media(max-width:1199px) {
 	.main {
 		&-phone {
-			left: 65%;
+			left: 60%;
 		}
 	}
 }
@@ -219,8 +220,8 @@ a {
 		}
 
 		&-phone {
-			left: 50%;
-			top: 89%;
+			left: 46%;
+			top: 85%;
 			width: 36rem;
 			height: 28rem;
 		}
@@ -236,13 +237,13 @@ a {
 		}
 
 		&-phone {
-			top: 85%;
+			top: 80%;
 			width: 28rem;
 			height: 22rem;
 		}
 	}
 }
-/*
+
 @media(max-width:575px) {
 	.button {
 		padding: 1rem 2rem;
@@ -271,7 +272,10 @@ a {
 	}
 
 	.main {
-		min-height: 50rem;
+		background-position:left right;
+		&-content{
+			padding-top: 15rem;
+		}
 		&-title {
 			font-size: 1.6rem;
 		}
@@ -286,9 +290,10 @@ a {
 		}
 	
 		&-phone {
+			left: 60%;
 			width: 16rem;
 			height: 16rem;
 		}
 	}
 
-}*/
+}
