@@ -179,39 +179,53 @@ a {
     height: 22rem;
   }
 }
-@media (max-width: 575px) {
-  .button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-  .header-logo img {
-    width: 6rem;
-    height: 3rem;
-  }
-  .header-delivery {
-    font-size: 1.2rem;
-  }
-  .header-pohone {
-    font-size: 1.7rem;
-  }
-  .header-call {
-    font-size: 1.4rem;
-  }
-  .main {
-    min-height: 50rem;
-  }
-  .main-title {
-    font-size: 1.6rem;
-  }
-  .main-subtitle {
-    font-size: 1rem;
-  }
-  .main-vr {
-    width: 14rem;
-    height: 8rem;
-  }
-  .main-phone {
-    width: 16rem;
-    height: 16rem;
-  }
-}
+/*
+@media(max-width:575px) {
+	.button {
+		padding: 1rem 2rem;
+		font-size: 1rem;
+	}
+
+	.header {
+		&-logo {
+			img {
+				width: 6rem;
+				height: 3rem;
+			}
+		}
+
+		&-delivery {
+			font-size: 1.2rem;
+		}
+
+		&-pohone {
+			font-size: 1.7rem;
+		}
+
+		&-call {
+			font-size: 1.4rem;
+		}
+	}
+
+	.main {
+		min-height: 50rem;
+		&-title {
+			font-size: 1.6rem;
+		}
+
+		&-subtitle {
+			font-size: 1rem;
+		}
+
+		&-vr {
+			width: 14rem;
+			height: 8rem;
+		}
+	
+		&-phone {
+			width: 16rem;
+			height: 16rem;
+		}
+	}
+
+}*/
