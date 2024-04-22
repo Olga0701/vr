@@ -1,3 +1,4 @@
+/*Modals */
 $(document).ready(function () {
 $('.popup-btn').on('click', function (event) {
 	event.preventDefault();
@@ -8,3 +9,4 @@ $('.popup-close').on('click', function (event) {
 	$('.popup').fadeOut();
 });
 });
+/*Forms */

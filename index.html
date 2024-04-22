@@ -55,15 +55,15 @@
 				<button class="popup-close" id="icon">&#10006;</button>
 
 				<div class="forms popup-form">
-					<form class="form" action="#">
+					<form class="form" action="./src/mailer/smart.php" method="post">
 						<p class="form-title">Введине ваши данные <br>и нажмите заказать</p>
-						<input class="form-input" id="nomber" type="text" placeholder="Ваше имя" required>
-						<input class="form-input" id="tel" type="text" placeholder="Введите телефон" required>
-						<select>
+						<input class="form-input" name="user_name" id="nomber" type="text" placeholder="Ваше имя" required>
+						<input class="form-input" name="user_phone" id="tel" type="number" placeholder="Введите телефон" required>
+						<select name="user_select">
 							<option>с Bluetooth</option>
 							<option>бeз Bluetooth</option>
 						</select>
-						<button class="button popup-button" id="solicitud1">Заказать VR Box II</button>
+						<button class="button popup-button" id="solicitud" type="submit">Заказать VR Box II</button>
 						<p class="form-footer">Перезвоним в течении 10 минут</p>
 					</form>
 				</div>
@@ -72,6 +72,21 @@
 	</div>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="./src/js/js.js"></script>
+<script>
+	$('form').submit(function(event) {
+	event.preventDefault();
+	$.ajax({
+		type: "POST",
+		url: "./src/mailer/smart.php",
+		data: $(this).serialize()
+	}).done(function() {
+		$(this).find("input").val("");
+		alert("Сообщение успешно отправлено");
+		$("form").trigger("reset");
+	});
+	return false;
+});
+</script>
 </body>
 
 </html>
