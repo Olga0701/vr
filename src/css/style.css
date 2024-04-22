@@ -87,7 +87,7 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/main/bg.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 70rem;
+  min-height: 100vh;
 }
 .main:before {
   content: '';
@@ -118,6 +118,7 @@ a {
 .main-vr {
   position: absolute;
   top: 110%;
+  bottom: 0;
   width: 50rem;
   height: 20rem;
 }
@@ -125,6 +126,7 @@ a {
   position: absolute;
   left: 110%;
   top: 70%;
+  bottom: 0;
   width: 50rem;
   height: 40rem;
 }
