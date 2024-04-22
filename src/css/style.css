@@ -29,6 +29,43 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #85b528;
+}
+.forms {
+  border: 3px solid #18a7d0;
+  background-color: #000000;
+}
+.form {
+  display: inline-block;
+  padding: 2rem 6rem;
+}
+.form-title,
+.form-input,
+.form-footer,
+.form select {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+}
+.form-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.form-input,
+.form select {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border: 2px solid #ffffff;
+}
+.form-footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
 .button {
   display: block;
   padding: 2rem 3.5rem;
@@ -40,6 +77,9 @@ a {
   border: none;
   color: #ffffff;
   background-color: #94ca2d;
+}
+.button:hover {
+  background-color: #85b528;
 }
 /*main*/
 .header {
@@ -130,6 +170,35 @@ a {
   width: 50rem;
   height: 40rem;
 }
+/*Ventas modales*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.popup-close {
+  position: absolute;
+  top: -2%;
+  left: 96%;
+  color: #18a7d0;
+  border: 3px solid #18a7d0;
+  border-radius: 50%;
+  background-color: #000000;
+}
 /*Media*/
 @media (max-width: 1399px) {
   .main-phone {
@@ -179,6 +248,16 @@ a {
     top: 80%;
     width: 28rem;
     height: 22rem;
+  }
+  .popup-container {
+    width: 90%;
+  }
+  .popup-form {
+    text-align: center;
+  }
+  .popup-button {
+    width: 100%;
+    height: 5rem;
   }
 }
 @media (max-width: 575px) {
