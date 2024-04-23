@@ -55,6 +55,28 @@ body {
 	.roman();
 }
 
+section {
+	padding: 10rem 7rem;
+}
+
+.section-header {
+	h2 {
+		text-align: center;
+		font-size: 3.5rem;
+		.bold();
+	}
+}
+
+h3 {
+	font-size: 2rem;
+	.bold();
+}
+
+p,
+li {
+	font-size: 1.7rem;
+}
+
 a {
 	text-decoration: none;
 
@@ -62,36 +84,47 @@ a {
 		color: darken(@bg-btn, 5%);
 	}
 }
-.forms{
+
+.forms {
 	border: 3px solid @bg-border;
 	background-color: @bg-black;
 }
-.form{
+
+.form {
 	display: inline-block;
 	padding: 2rem 6rem;
-	&-title, &-input, &-footer, select{
+
+	&-title,
+	&-input,
+	&-footer,
+	select {
 		display: block;
 		width: 100%;
 		color: @bg-light;
 		background-color: @bg-black;
 	}
-	&-title{
+
+	&-title {
 		margin-bottom: 2rem;
 		text-align: center;
 		font-size: 2.2rem;
 	}
-	&-input, select{
+
+	&-input,
+	select {
 		padding: 1.5rem 2rem;
 		margin-bottom: 1rem;
 		font-size: 1.8rem;
 		border: 2px solid @bg-light;
 	}
-	&-footer{
+
+	&-footer {
 		margin-top: 1rem;
 		text-align: center;
 		font-size: 1.5rem;
 	}
 }
+
 .button {
 	display: block;
 	padding: 2rem 3.5rem;
@@ -210,7 +243,43 @@ a {
 		height: 40rem;
 	}
 }
-
+/*description*/
+.description{
+	&-header{
+		margin-bottom: 4rem;
+		text-align: left !important;
+	}
+	p{
+		margin-bottom: 4rem;
+	}
+	&-box{
+		display: inline-block;
+		margin-bottom: 4rem;
+		ul{
+			min-height: 13rem;
+			li{
+				list-style-type: none;
+			}
+			li:before {
+				content: "-"; 
+			 }
+		}
+		&-header{
+			margin-bottom: 2rem;
+		}
+		span{
+			color: @bg-red;
+		}
+	}
+	&-img{
+		width: 50rem;
+		height: 40rem;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
 /*Ventas modales*/
 
 .popup {
@@ -231,7 +300,8 @@ a {
 		top: 15%;
 		transform: translateX(-50%);
 	}
-	&-close{
+
+	&-close {
 		position: absolute;
 		top: -2%;
 		left: 96%;
@@ -311,14 +381,16 @@ a {
 		}
 	}
 
-	.popup{
-		&-container{
+	.popup {
+		&-container {
 			width: 90%;
 		}
-		&-form{
+
+		&-form {
 			text-align: center;
 		}
-		&-button{
+
+		&-button {
 			width: 100%;
 			height: 5rem;
 

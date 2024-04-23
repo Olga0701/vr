@@ -26,6 +26,22 @@ p {
 body {
   font-family: 'HelveticaNeueCyr_roman';
 }
+section {
+  padding: 10rem 7rem;
+}
+.section-header h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'HelveticaNeueCyr_bold';
+}
+h3 {
+  font-size: 2rem;
+  font-family: 'HelveticaNeueCyr_bold';
+}
+p,
+li {
+  font-size: 1.7rem;
+}
 a {
   text-decoration: none;
 }
@@ -169,6 +185,41 @@ a:hover {
   bottom: 0;
   width: 50rem;
   height: 40rem;
+}
+/*description*/
+.description-header {
+  margin-bottom: 4rem;
+  text-align: left !important;
+}
+.description p {
+  margin-bottom: 4rem;
+}
+.description-box {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+.description-box ul {
+  min-height: 13rem;
+}
+.description-box ul li {
+  list-style-type: none;
+}
+.description-box ul li:before {
+  content: "-";
+}
+.description-box-header {
+  margin-bottom: 2rem;
+}
+.description-box span {
+  color: #b61919;
+}
+.description-img {
+  width: 50rem;
+  height: 40rem;
+}
+.description-img img {
+  width: 100%;
+  height: 100%;
 }
 /*Ventas modales*/
 .popup {

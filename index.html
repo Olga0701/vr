@@ -47,6 +47,55 @@
 			</div>
 		</div>
 	</main>
+	<section class="description">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="description-header">Что такое vr box 2</h2>
+			</div>
+			<div class="row">
+				<div class="col-xl-7">
+					<p>Это специальное устройство, в которое вставляется смартфон. Очки одеваются на голову и крепко фиксируются.
+						С их помощью вы можете целиком погрузиться в мир виртуальной реальности в любом удобном для вас месте. С
+						очками можно: смотреть 3D фильмы, играть в игры, Смотреть любые видео с YouTube и многое другое!</p>
+						<div class="row">
+							<div class="col-xl-6">
+								<div class="description-box">
+									<h3 class="description-box-header">Комплектация 1:</h3>
+									<ul>
+										<li>Очки VR Box 2</li>
+										<li>Ремешок для крепления на голову </li>
+										<li>Ткань для очистки линз </li>
+										<li>Инструкция</li>
+									</ul>
+									<h3>Цена без пульта: <span>2390 грн</span></h3>
+								</div>
+							</div>
+							<div class="col-xl-6">
+								<div class="description-box">
+									<h3 class="description-box-header">Комплектация 2:</h3>
+									<ul>
+										<li>Очки VR Box 2</li>
+										<li>Ремешок для крепления на голову </li>
+										<li>Ткань для очистки линз </li>
+										<li>Инструкция</li>
+										<li><strong>Пульт дистанционного управления</strong></li>
+									</ul>
+									<h3>Цена с пульта: <span>2990 грн</span></h3>
+								</div>
+							</div>
+						</div>
+
+
+					<button class="button popup-btn">Выбрать комплектацию и заказать VR Box II</button>
+				</div>
+				<div class="col-xl-5">
+					<div class="description-img">
+						<img src="./src/img/box.png" alt="box">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--Модальные окна-->
 	<!--Модальное окно обратной связи-->
 	<div class="popup">
@@ -70,23 +119,23 @@
 			</div>
 		</div>
 	</div>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="./src/js/js.js"></script>
-<script>
-	$('form').submit(function(event) {
-		event.preventDefault();
-		$.ajax({
-			type: "POST",
-			url: "./src/mailer/smart.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Сообщение успешно отправлено");
-			$("form").trigger("reset");
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./src/js/js.js"></script>
+	<script>
+		$('form').submit(function (event) {
+			event.preventDefault();
+			$.ajax({
+				type: "POST",
+				url: "./src/mailer/smart.php",
+				data: $(this).serialize()
+			}).done(function () {
+				$(this).find("input").val("");
+				alert("Сообщение успешно отправлено");
+				$("form").trigger("reset");
+			});
+			return false;
 		});
-		return false;
-	});
-</script>
+	</script>
 </body>
 
 </html>
