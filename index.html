@@ -74,18 +74,18 @@
 <script src="./src/js/js.js"></script>
 <script>
 	$('form').submit(function(event) {
-	event.preventDefault();
-	$.ajax({
-		type: "POST",
-		url: "./src/mailer/smart.php",
-		data: $(this).serialize()
-	}).done(function() {
-		$(this).find("input").val("");
-		alert("Сообщение успешно отправлено");
-		$("form").trigger("reset");
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "./src/mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Сообщение успешно отправлено");
+			$("form").trigger("reset");
+		});
+		return false;
 	});
-	return false;
-});
 </script>
 </body>
 

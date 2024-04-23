@@ -1,7 +1,8 @@
 <?php 
 
 $name = $_POST['user_name'];
-$tel = $_POST['user_phone'];
+$phone = $_POST['user_phone'];
+$select = $_POST['user_select'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -31,6 +32,7 @@ $mail->Subject = 'Это тема сообщения';
 $mail->Body    = '
 	Пользователь оставил свои данные <br> 
 	Имя: ' . $name . ' <br>
+	Выбор: ' . $select . ' <br>
 	Телефон: ' . $phone . '';
  
 $mail->AltBody = 'Это альтернативный текст';
