@@ -190,7 +190,7 @@ a {
 
 .main {
 	position: relative;
-	min-height: 100vh;
+	min-height: 70rem;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/main/bg.jpg');
 	background-size: cover;
 	background-position: center;
@@ -243,43 +243,57 @@ a {
 		height: 40rem;
 	}
 }
+
 /*description*/
-.description{
-	&-header{
+.description {
+	background-color: @bg-background;
+
+	&-header {
 		margin-bottom: 4rem;
-		text-align: left !important;
+		font-size: 3.5rem;
+		.bold();
 	}
-	p{
+
+	p {
 		margin-bottom: 4rem;
 	}
-	&-box{
+
+	&-box {
 		display: inline-block;
 		margin-bottom: 4rem;
-		ul{
-			min-height: 13rem;
-			li{
+
+		ul {
+			min-height: 18rem;
+
+			li {
 				list-style-type: none;
 			}
+
 			li:before {
-				content: "-"; 
-			 }
+				content: "-";
+			}
 		}
-		&-header{
+
+		&-header {
 			margin-bottom: 2rem;
 		}
-		span{
+
+		span {
 			color: @bg-red;
 		}
 	}
-	&-img{
+
+	&-img {
 		width: 50rem;
 		height: 40rem;
-		img{
+
+		img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 }
+
 /*Ventas modales*/
 
 .popup {
