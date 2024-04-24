@@ -244,6 +244,38 @@ a {
 	}
 }
 
+/*Thanks*/
+.thanks {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+
+	&-description {
+		margin-bottom: 4rem;
+		text-transform: uppercase;
+		.bold();
+		color: @bg-light;
+	}
+
+	&-title {
+		margin-bottom: 2rem;
+		font-size: 4.5rem;
+	}
+
+	&-subtitle {
+		font-size: 2.5rem;
+	}
+
+	&-btn {
+		margin: 0 auto;
+		&:hover{
+			color: @bg-light;
+		}
+	}
+}
+
 /*description*/
 .description {
 	background-color: @bg-background;

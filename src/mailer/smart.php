@@ -36,18 +36,13 @@ $mail->Body    = '
 	Телефон: ' . $phone . '';
  
 $mail->AltBody = 'Это альтернативный текст';
-/*
+
 //что происходит после отправки
 if(!$mail->send()) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";//выводит текст и код ошибки, если не отправлено
 } else {
-  header('Location: ../thanks.html');//куда перенаправит пользователя после успешной отправки
-}*/
-
-if(!$mail->send()) {
-  return false;
-} else {
-  return true;
+  header('Location: ../pages/thanks.html');//куда перенаправит пользователя после успешной отправки
 }
+
 
 ?>

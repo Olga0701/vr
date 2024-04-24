@@ -186,6 +186,34 @@ a:hover {
   width: 50rem;
   height: 40rem;
 }
+/*Thanks*/
+.thanks {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.thanks-description {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr_bold';
+  color: #ffffff;
+}
+.thanks-title {
+  margin-bottom: 2rem;
+  font-size: 4.5rem;
+}
+.thanks-subtitle {
+  font-size: 2.5rem;
+}
+.thanks-btn {
+  margin: 0 auto;
+}
+.thanks-btn:hover {
+  color: #ffffff;
+}
 /*description*/
 .description {
   background-color: #f8f8f0;
