@@ -237,7 +237,7 @@ a:hover {
   list-style-type: none;
 }
 .description-box ul li:before {
-  content: "-";
+  content: "- ";
 }
 .description-box-header {
   margin-bottom: 2rem;
@@ -253,6 +253,7 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+/*Possibilities*/
 /*Ventas modales*/
 .popup {
   display: none;
