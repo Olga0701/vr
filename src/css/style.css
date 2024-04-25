@@ -26,6 +26,9 @@ p {
 body {
   font-family: 'HelveticaNeueCyr_roman';
 }
+article {
+  height: 100vh;
+}
 section {
   padding: 10rem 7rem;
 }
@@ -254,6 +257,24 @@ a:hover {
   height: 100%;
 }
 /*Possibilities*/
+.possibilities {
+  padding: 6rem 0;
+}
+.possibilities-img {
+  margin-bottom: 2rem;
+}
+.possibilities-title img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+.possibilities-description {
+  display: inline-block;
+}
+.possibilities-description h3 {
+  margin-bottom: 2rem;
+}
 /*Ventas modales*/
 .popup {
   display: none;
