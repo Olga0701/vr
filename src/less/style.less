@@ -278,6 +278,7 @@ a {
 
 /*description*/
 .description {
+
 	background-color: @bg-background;
 
 	&-header {
@@ -365,6 +366,11 @@ a {
 			left: 83%;
 		}
 	}
+	.description{
+		&-img{
+			width: 44rem;
+		}
+	}
 }
 
 @media(max-width:1199px) {
@@ -372,6 +378,21 @@ a {
 		&-phone {
 			left: 60%;
 		}
+	}
+	.description{
+		position: relative;
+		&-set{
+			margin-top: 50rem;
+		}
+	&-img{
+		position: absolute;
+		top: 25%;
+	}
+	&-box{
+		ul{
+			min-height: 0;
+		}
+	}
 	}
 }
 
@@ -442,6 +463,11 @@ a {
 
 		}
 	}
+	.description{
+		&-img{
+			top: 25%;
+		}
+	}
 
 }
 
@@ -473,6 +499,7 @@ a {
 	}
 
 	.main {
+		min-height: 45rem;
 		background-position: left right;
 
 		&-content {
@@ -480,6 +507,7 @@ a {
 		}
 
 		&-title {
+			margin-top: 5rem;
 			font-size: 1.6rem;
 		}
 
@@ -498,5 +526,14 @@ a {
 			height: 16rem;
 		}
 	}
-
+	.description{
+		&-img{
+			top: 37%;
+			width: 25rem;
+			height: 25rem;
+		}
+		&-set{
+			margin-top: 37rem;
+		}
+	}
 }
