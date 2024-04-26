@@ -300,19 +300,27 @@ a:hover {
 .call-subtitle::after {
   content: '';
   position: absolute;
-  right: -49px;
+  right: -50px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border: 36px solid transparent;
   border-left: 14px solid #18a7d0;
 }
+.call-icon {
+  margin-bottom: auto;
+}
 .call-icon img {
   width: 4rem;
   height: 4rem;
 }
 .call-form {
-  margin: 2rem 2rem;
+  margin: 2rem 0;
+}
+.call-description {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 .call-box1 {
   display: none;
@@ -362,6 +370,9 @@ a:hover {
   .description {
     position: relative;
   }
+  .description-btn {
+    margin: 0 auto;
+  }
   .description-set {
     margin-top: 50rem;
   }
@@ -370,7 +381,7 @@ a:hover {
     top: 25%;
   }
   .description-box ul {
-    min-height: 0;
+    min-height: 14rem;
   }
 }
 @media (max-width: 991px) {
