@@ -56,7 +56,6 @@ a:hover {
   background-color: #000000;
 }
 .form {
-  display: inline-block;
   padding: 2rem 6rem;
 }
 .form-title,
@@ -87,6 +86,7 @@ a:hover {
 }
 .button {
   display: block;
+  width: 100%;
   padding: 2rem 3.5rem;
   margin-top: 3rem;
   font-size: 1.8rem;
@@ -261,7 +261,11 @@ a:hover {
   padding: 6rem 0;
 }
 .possibilities-img {
+  height: 35rem;
   margin-bottom: 2rem;
+}
+.possibilities-footer {
+  margin-top: 12rem;
 }
 .possibilities-title img {
   width: 5rem;
