@@ -141,6 +141,10 @@ a {
 	color: @bg-light;
 	background-color: @bg-btn;
 
+	&-small {
+		width: auto;
+	}
+
 	&:hover {
 		background-color: darken(@bg-btn, 5%);
 	}
@@ -340,11 +344,9 @@ a {
 		margin-bottom: 2rem;
 
 	}
-	&-footer{
-		margin-top: 12rem;
-	}
 
 	&-title {
+		margin-bottom: 15rem;
 		img {
 			width: 5rem;
 			height: 5rem;
@@ -390,8 +392,16 @@ a {
 			transform: translateY(-50%);
 			border: 36px solid transparent;
 			border-left: 14px solid #18a7d0;
+		}
 	}
+
+	&-icon {
+		img {
+			width: 4rem;
+			height: 4rem;
+		}
 	}
+
 	&-form {
 		margin: 2rem 2rem;
 	}
@@ -505,6 +515,18 @@ a {
 			top: 85%;
 			width: 36rem;
 			height: 28rem;
+		}
+	}
+	.possibilities{
+		&-box{
+			display: table;
+		}
+		&-footer{
+			display: table-header-group;
+			padding-top: 2rem;
+		}
+		&-title{
+			margin-bottom: 5rem;
 		}
 	}
 }

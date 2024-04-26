@@ -97,6 +97,9 @@ a:hover {
   color: #ffffff;
   background-color: #94ca2d;
 }
+.button-small {
+  width: auto;
+}
 .button:hover {
   background-color: #85b528;
 }
@@ -264,8 +267,8 @@ a:hover {
   height: 35rem;
   margin-bottom: 2rem;
 }
-.possibilities-footer {
-  margin-top: 12rem;
+.possibilities-title {
+  margin-bottom: 15rem;
 }
 .possibilities-title img {
   width: 5rem;
@@ -303,6 +306,10 @@ a:hover {
           transform: translateY(-50%);
   border: 36px solid transparent;
   border-left: 14px solid #18a7d0;
+}
+.call-icon img {
+  width: 4rem;
+  height: 4rem;
 }
 .call-form {
   margin: 2rem 2rem;
@@ -389,6 +396,16 @@ a:hover {
     top: 85%;
     width: 36rem;
     height: 28rem;
+  }
+  .possibilities-box {
+    display: table;
+  }
+  .possibilities-footer {
+    display: table-header-group;
+    padding-top: 2rem;
+  }
+  .possibilities-title {
+    margin-bottom: 5rem;
   }
 }
 @media (max-width: 767px) {
