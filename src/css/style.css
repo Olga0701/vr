@@ -385,6 +385,9 @@ a:hover {
   }
 }
 @media (max-width: 575px) {
+  section {
+    padding: 5rem 1rem;
+  }
   .button {
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -426,7 +429,7 @@ a:hover {
     height: 16rem;
   }
   .description-img {
-    top: 37%;
+    top: 33%;
     width: 25rem;
     height: 25rem;
   }

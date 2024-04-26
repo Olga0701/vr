@@ -117,8 +117,10 @@
 					<div class="possibilities-title">
 						<img src="./src/img/possibilities/cine.svg" alt="cine">
 						<div class="possibilities-description">
+
 							<h3>Просмотр фильмов, сериалов <br>и видео на Youtub</h3>
-							<p>В совершенно новом формате 3D, как перед <br> 6-ти метровым экраном! Также просмотр любых фильмов в формате
+							<p>В совершенно новом формате 3D, как перед <br> 6-ти метровым экраном! <br> Также просмотр любых фильмов
+								в формате
 								2D! </p>
 						</div>
 					</div>
@@ -129,7 +131,27 @@
 			</div>
 		</div>
 	</article>
-	<article class="parallax-window" data-parallax="scroll" data-image-src="./src/img/possibilities/bg.jpg"></article>
+	<article class="parallax-window" data-parallax="scroll" data-image-src="./src/img/possibilities/bg.jpg">
+		<div class="container">
+			<div class="parallax-content">
+				<div class="row">
+					<div class="col-xl-6"></div>
+					<div class="col-xl-4 offset-xl-2">
+						<div class="forms popup-form">
+							<form class="form" action="./src/mailer/smart.php" method="post">
+								<p class="form-title">Введине ваши данные <br>и нажмите заказать</p>
+								<input class="form-input" name="user_name" id="nomber" type="text" placeholder="Ваше имя" required>
+								<input class="form-input" name="user_phone" id="tel" type="number" placeholder="Введите телефон" required>
+								<button class="button popup-button" id="solicitud" type="submit">Заказать VR Box II</button>
+								<p class="form-footer">Перезвоним в течении 10 минут</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</article>
 	<article class="possibilities">
 		<div class="container">
 			<div class="row">
