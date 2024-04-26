@@ -314,6 +314,9 @@ a:hover {
 .call-form {
   margin: 2rem 2rem;
 }
+.call-box1 {
+  display: none;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -406,6 +409,12 @@ a:hover {
   }
   .possibilities-title {
     margin-bottom: 5rem;
+  }
+  .call-box {
+    display: none;
+  }
+  .call-box1 {
+    display: block;
   }
 }
 @media (max-width: 767px) {
