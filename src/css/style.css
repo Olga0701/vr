@@ -27,10 +27,10 @@ body {
   font-family: 'HelveticaNeueCyr_roman';
 }
 article {
-  height: 100vh;
+  min-height: 40rem;
 }
 section {
-  padding: 10rem 7rem;
+  padding: 10rem 0;
 }
 .section-header h2 {
   text-align: center;
@@ -275,6 +275,34 @@ a:hover {
 .possibilities-description h3 {
   margin-bottom: 2rem;
 }
+/*Parallax*/
+.call h2,
+.call p {
+  color: #ffffff;
+}
+.call h2 {
+  font-size: 3.5rem;
+  font-family: 'HelveticaNeueCyr_bold';
+}
+.call-subtitle {
+  position: relative;
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+  background: #18a7d0;
+}
+.call-subtitle::after {
+  content: '';
+  position: absolute;
+  right: -49px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 36px solid transparent;
+  border-left: 14px solid #18a7d0;
+}
+.call-form {
+  margin: 2rem 2rem;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -386,7 +414,7 @@ a:hover {
 }
 @media (max-width: 575px) {
   section {
-    padding: 5rem 1rem;
+    padding: 5rem 0;
   }
   .button {
     padding: 1rem 2rem;
