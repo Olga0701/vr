@@ -343,6 +343,9 @@ a {
 		height: 35rem;
 		margin-bottom: 2rem;
 
+		img {
+			width: 100%;
+		}
 	}
 
 	&-title {
@@ -409,10 +412,6 @@ a {
 
 	&-form {
 		margin: 2rem 0;
-	}
-
-	&-description {
-		min-height: max-content;
 	}
 
 	&-box1 {
@@ -547,6 +546,10 @@ a {
 		&-title {
 			margin-bottom: 5rem;
 		}
+
+		&-img {
+			height: 30rem;
+		}
 	}
 
 	.call {
@@ -556,6 +559,10 @@ a {
 
 		&-box1 {
 			display: block;
+		}
+
+		&-description {
+			padding-top: 3rem;
 		}
 	}
 }
@@ -594,6 +601,29 @@ a {
 	.description {
 		&-img {
 			top: 25%;
+		}
+	}
+
+	.call {
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		&-subtitle {
+			font-size: 1.2rem;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: -41px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				border: 28px solid transparent;
+				border-left: 14px solid #18a7d0;
+
+
+			}
 		}
 	}
 
@@ -670,4 +700,5 @@ a {
 			margin-top: 37rem;
 		}
 	}
+
 }

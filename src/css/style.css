@@ -267,6 +267,9 @@ a:hover {
   height: 35rem;
   margin-bottom: 2rem;
 }
+.possibilities-img img {
+  width: 100%;
+}
 .possibilities-title {
   margin-bottom: 15rem;
 }
@@ -316,11 +319,6 @@ a:hover {
 }
 .call-form {
   margin: 2rem 0;
-}
-.call-description {
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
 }
 .call-box1 {
   display: none;
@@ -421,11 +419,17 @@ a:hover {
   .possibilities-title {
     margin-bottom: 5rem;
   }
+  .possibilities-img {
+    height: 30rem;
+  }
   .call-box {
     display: none;
   }
   .call-box1 {
     display: block;
+  }
+  .call-description {
+    padding-top: 3rem;
   }
 }
 @media (max-width: 767px) {
@@ -451,6 +455,22 @@ a:hover {
   }
   .description-img {
     top: 25%;
+  }
+  .call h2 {
+    font-size: 2.2rem;
+  }
+  .call-subtitle {
+    font-size: 1.2rem;
+  }
+  .call-subtitle::after {
+    content: '';
+    position: absolute;
+    right: -41px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 28px solid transparent;
+    border-left: 14px solid #18a7d0;
   }
 }
 @media (max-width: 575px) {
