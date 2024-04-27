@@ -97,7 +97,7 @@ a:hover {
   color: #ffffff;
   background-color: #94ca2d;
 }
-.button-small {
+.button-size {
   width: auto;
 }
 .button:hover {
@@ -434,7 +434,7 @@ a:hover {
   }
 }
 @media (max-width: 767px) {
-  .small {
+  .size {
     font-size: 1.5rem;
   }
   .main-vr {
@@ -482,7 +482,7 @@ a:hover {
     padding: 1rem 2rem;
     font-size: 1rem;
   }
-  .small {
+  .size {
     font-size: 1.2rem;
   }
   .header-logo img {
