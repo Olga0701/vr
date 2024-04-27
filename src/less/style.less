@@ -392,7 +392,7 @@ a {
 		&::after {
 			content: '';
 			position: absolute;
-			right: -50px;
+			right: -49px;
 			top: 50%;
 			transform: translateY(-50%);
 			border: 36px solid transparent;
@@ -489,11 +489,7 @@ a {
 			top: 25%;
 		}
 
-		&-box {
-			ul {
-				min-height: 14rem;
-			}
-		}
+	
 	}
 }
 
@@ -563,11 +559,18 @@ a {
 
 		&-description {
 			padding-top: 3rem;
+			text-align: center;
+		}
+		&-subtitle{
+			display: inline-block;
 		}
 	}
 }
 
 @media(max-width:767px) {
+	.small{
+		font-size: 1.5rem;
+	}
 	.main {
 		&-vr {
 			top: 105%;
@@ -580,6 +583,7 @@ a {
 			width: 28rem;
 			height: 22rem;
 		}
+		
 	}
 
 	.popup {
@@ -610,16 +614,16 @@ a {
 		}
 
 		&-subtitle {
-			font-size: 1.25rem;
+		
 
 			&::after {
 				content: '';
 				position: absolute;
-				right: -41px;
+				right: -47px;
 				top: 50%;
 				-webkit-transform: translateY(-50%);
 				transform: translateY(-50%);
-				border: 28px solid transparent;
+				border: 34px solid transparent;
 				border-left: 14px solid #18a7d0;
 
 
@@ -638,7 +642,9 @@ a {
 		padding: 1rem 2rem;
 		font-size: 1rem;
 	}
-
+.small{
+	font-size: 1.2rem;
+}
 	.header {
 		&-logo {
 			img {
@@ -690,15 +696,55 @@ a {
 	}
 
 	.description {
+		&-header{
+			margin-bottom: 2rem;
+			font-size: 2.2rem;
+		}
+		p, li{
+			font-size: 1.1rem;
+		}
+		h3{
+			font-size: 1.7rem;
+		}
 		&-img {
-			top: 33%;
+			top: 20%;
 			width: 25rem;
 			height: 25rem;
 		}
-
+&-box{
+	ul{
+		min-height: auto;
+	}
+}
 		&-set {
-			margin-top: 37rem;
+			margin-top: 30rem;
 		}
 	}
-
+	.possibilities{
+		h3{
+			font-size: 1.4rem;
+		}
+		p{
+			font-size: 1.2rem;
+		}
+		&-img{
+			height: 25rem;
+		}
+	}
+.call{
+	&-subtitle{
+		&::after{
+			content: '';
+        position: absolute;
+        right: -41px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 29px solid transparent;
+        border-left: 14px solid #18a7d0;
+		}
+	}
+	&-time{
+display: inline-block;
+	}
+}
 }

@@ -303,7 +303,7 @@ a:hover {
 .call-subtitle::after {
   content: '';
   position: absolute;
-  right: -50px;
+  right: -49px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -378,9 +378,6 @@ a:hover {
     position: absolute;
     top: 25%;
   }
-  .description-box ul {
-    min-height: 14rem;
-  }
 }
 @media (max-width: 991px) {
   .header {
@@ -430,9 +427,16 @@ a:hover {
   }
   .call-description {
     padding-top: 3rem;
+    text-align: center;
+  }
+  .call-subtitle {
+    display: inline-block;
   }
 }
 @media (max-width: 767px) {
+  .small {
+    font-size: 1.5rem;
+  }
   .main-vr {
     top: 105%;
     width: 30rem;
@@ -459,17 +463,14 @@ a:hover {
   .call h2 {
     font-size: 2.2rem;
   }
-  .call-subtitle {
-    font-size: 1.25rem;
-  }
   .call-subtitle::after {
     content: '';
     position: absolute;
-    right: -41px;
+    right: -47px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 28px solid transparent;
+    border: 34px solid transparent;
     border-left: 14px solid #18a7d0;
   }
 }
@@ -480,6 +481,9 @@ a:hover {
   .button {
     padding: 1rem 2rem;
     font-size: 1rem;
+  }
+  .small {
+    font-size: 1.2rem;
   }
   .header-logo img {
     width: 6rem;
@@ -517,12 +521,48 @@ a:hover {
     width: 16rem;
     height: 16rem;
   }
+  .description-header {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  .description p,
+  .description li {
+    font-size: 1.1rem;
+  }
+  .description h3 {
+    font-size: 1.7rem;
+  }
   .description-img {
-    top: 33%;
+    top: 20%;
     width: 25rem;
     height: 25rem;
   }
+  .description-box ul {
+    min-height: auto;
+  }
   .description-set {
-    margin-top: 37rem;
+    margin-top: 30rem;
+  }
+  .possibilities h3 {
+    font-size: 1.4rem;
+  }
+  .possibilities p {
+    font-size: 1.2rem;
+  }
+  .possibilities-img {
+    height: 25rem;
+  }
+  .call-subtitle::after {
+    content: '';
+    position: absolute;
+    right: -41px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: 29px solid transparent;
+    border-left: 14px solid #18a7d0;
+  }
+  .call-time {
+    display: inline-block;
   }
 }
