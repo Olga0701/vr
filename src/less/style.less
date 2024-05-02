@@ -65,12 +65,11 @@ section {
 
 .section-header {
 	margin-bottom: 7rem;
+
 	h2 {
 		position: relative;
-		text-align: center;
-		font-size: 3.5rem;
-		.bold();
-		&::after{
+
+		&::after {
 			position: absolute;
 			content: " ";
 			top: 50%;
@@ -82,6 +81,12 @@ section {
 			background: @bg-border;
 		}
 	}
+}
+
+h2 {
+	text-align: center;
+	font-size: 3.5rem;
+	.bold();
 }
 
 h3 {
@@ -431,16 +436,54 @@ a {
 		display: none;
 	}
 }
+
 /*Work*/
-.work{
-	&-box{
+.work {
+	&-box {
 		position: relative;
-		p{
+
+		p {
 			margin-top: 6rem;
 		}
 	}
+
+	&-mobil {
+		margin-top: 8rem;
+		text-align: center;
+
+		p {
+			margin-top: 1.5rem;
+		}
+	}
+&-phone{
+	width: 100%;
+	img{
+		width: 100%;
+	}
 }
-.circle{
+	&-vr {
+		width: 100%;
+		margin-top: 8rem;
+		img {
+			width: 100%;
+		}
+
+		p {
+			margin-top: 2.5rem;
+		}
+	}
+
+	&-footer {
+		margin-top: 18rem;
+
+		p {
+			font-size: 2.2rem;
+			.bold();
+		}
+	}
+}
+
+.circle {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -449,20 +492,22 @@ a {
 	color: @bg-light;
 	background-color: @bg-border;
 	border-radius: 50%;
-	&-border{
+
+	&-border {
 		position: absolute;
 		top: 50%;
 		left: 17%;
-    width: 6rem;
-    height: 6rem;
-    padding: 3px;
-    line-height: 4.2rem;
-    text-align: center;
-    border-radius: 50%;
-    border: 4px solid @bg-border;
+		width: 6rem;
+		height: 6rem;
+		padding: 3px;
+		line-height: 4.2rem;
+		text-align: center;
+		border-radius: 50%;
+		border: 4px solid @bg-border;
 		background: @bg-light;
 	}
 }
+
 /*Ventas modales*/
 
 .popup {
@@ -533,8 +578,9 @@ a {
 			top: 25%;
 		}
 	}
-	.work{
-		&-box{
+
+	.work {
+		&-box {
 			margin-top: 3rem;
 		}
 	}
@@ -609,16 +655,29 @@ a {
 			padding-top: 3rem;
 			text-align: center;
 		}
-		&-subtitle{
+
+		&-subtitle {
 			display: inline-block;
+		}
+	}
+	
+	.work{
+		p{
+			text-align: center;
+			font-size: 1.7rem;
+		}
+		&-vr{
+			margin-top: 0;
+			margin-bottom: 5rem;
 		}
 	}
 }
 
 @media(max-width:767px) {
-	.size{
+	.size {
 		font-size: 1.2rem;
 	}
+
 	.main {
 		&-vr {
 			top: 105%;
@@ -631,7 +690,7 @@ a {
 			width: 28rem;
 			height: 22rem;
 		}
-		
+
 	}
 
 	.popup {
@@ -662,7 +721,7 @@ a {
 		}
 
 		&-subtitle {
-		
+
 
 			&::after {
 				content: '';
@@ -690,9 +749,11 @@ a {
 		padding: 1rem 2rem;
 		font-size: 1rem;
 	}
-.size{
-	font-size: 1.1rem;
-}
+
+	.size {
+		font-size: 1.1rem;
+	}
+
 	.header {
 		&-logo {
 			img {
@@ -744,60 +805,72 @@ a {
 	}
 
 	.description {
-		&-header{
+		&-header {
 			margin-bottom: 2rem;
 			font-size: 2.2rem;
 		}
-		p, li{
+
+		p,
+		li {
 			font-size: 1.1rem;
 		}
-		h3{
+
+		h3 {
 			font-size: 1.7rem;
 		}
+
 		&-img {
 			top: 20%;
 			width: 25rem;
 			height: 25rem;
 		}
-&-box{
-	ul{
-		min-height: auto;
-	}
-}
+
+		&-box {
+			ul {
+				min-height: auto;
+			}
+		}
+
 		&-set {
 			margin-top: 30rem;
 		}
 	}
-	.possibilities{
-		h3{
+
+	.possibilities {
+		h3 {
 			font-size: 1.4rem;
 		}
-		p{
+
+		p {
 			font-size: 1.2rem;
 		}
-		&-img{
+
+		&-img {
 			height: 25rem;
 		}
 	}
-.call{
-	&-subtitle{
-		&::after{
-			content: '';
-        position: absolute;
-        right: -40px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 27px solid transparent;
-        border-left: 14px solid #18a7d0;
+
+	.call {
+		&-subtitle {
+			&::after {
+				content: '';
+				position: absolute;
+				right: -40px;
+				top: 50%;
+				transform: translateY(-50%);
+				border: 27px solid transparent;
+				border-left: 14px solid #18a7d0;
+			}
 		}
 	}
-}
-.work{
-	&-box{
-		text-align: center;
+
+	.work {
+		&-header {
+			text-align: center;
+		}
 	}
-}
-.circle-border{
-	left: 43%;
-}
+
+	.circle-border {
+		left: 43%;
+	}
 }
