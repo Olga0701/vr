@@ -265,7 +265,7 @@ a:hover {
 }
 .possibilities-img {
   height: 35rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .possibilities-img img {
   width: 100%;
@@ -418,6 +418,7 @@ a:hover {
   }
   .possibilities-img {
     height: 30rem;
+    margin-bottom: 5rem;
   }
   .call-box {
     display: none;
@@ -435,7 +436,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   .size {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .main-vr {
     top: 105%;
@@ -466,11 +467,11 @@ a:hover {
   .call-subtitle::after {
     content: '';
     position: absolute;
-    right: -47px;
+    right: -42px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 34px solid transparent;
+    border: 29px solid transparent;
     border-left: 14px solid #18a7d0;
   }
 }
@@ -555,14 +556,11 @@ a:hover {
   .call-subtitle::after {
     content: '';
     position: absolute;
-    right: -41px;
+    right: -40px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    border: 29px solid transparent;
+    border: 27px solid transparent;
     border-left: 14px solid #18a7d0;
-  }
-  .call-time {
-    display: inline-block;
   }
 }
