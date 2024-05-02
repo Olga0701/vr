@@ -342,6 +342,10 @@ a:hover {
   display: none;
 }
 /*Work*/
+.work {
+  background: url(../img/work/bg.jpg) top right no-repeat;
+  background-size: 100vw;
+}
 .work-box {
   position: relative;
 }
@@ -400,6 +404,11 @@ a:hover {
   border-radius: 50%;
   border: 4px solid #18a7d0;
   background: #ffffff;
+}
+/*Video*/
+.video {
+  background: #616161 url(../img/vr-bg.jpg) center center no-repeat;
+  background-size: cover;
 }
 /*Ventas modales*/
 .popup {
