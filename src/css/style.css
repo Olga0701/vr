@@ -32,10 +32,26 @@ article {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin-bottom: 7rem;
+}
 .section-header h2 {
+  position: relative;
   text-align: center;
   font-size: 3.5rem;
   font-family: 'HelveticaNeueCyr_bold';
+}
+.section-header h2::after {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  margin-top: 3rem;
+  width: 6rem;
+  height: 0.7rem;
+  background: #18a7d0;
 }
 h3 {
   font-size: 2rem;
@@ -323,6 +339,36 @@ a:hover {
 .call-box1 {
   display: none;
 }
+/*Work*/
+.work-box {
+  position: relative;
+}
+.work-box p {
+  margin-top: 6rem;
+}
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: 'HelveticaNeueCyr_bold';
+  color: #ffffff;
+  background-color: #18a7d0;
+  border-radius: 50%;
+}
+.circle-border {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  width: 6rem;
+  height: 6rem;
+  padding: 3px;
+  line-height: 4.2rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 4px solid #18a7d0;
+  background: #ffffff;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -377,6 +423,9 @@ a:hover {
   .description-img {
     position: absolute;
     top: 25%;
+  }
+  .work-box {
+    margin-top: 3rem;
   }
 }
 @media (max-width: 991px) {
@@ -562,5 +611,11 @@ a:hover {
             transform: translateY(-50%);
     border: 27px solid transparent;
     border-left: 14px solid #18a7d0;
+  }
+  .work-box {
+    text-align: center;
+  }
+  .circle-border {
+    left: 43%;
   }
 }

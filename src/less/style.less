@@ -64,10 +64,23 @@ section {
 }
 
 .section-header {
+	margin-bottom: 7rem;
 	h2 {
+		position: relative;
 		text-align: center;
 		font-size: 3.5rem;
 		.bold();
+		&::after{
+			position: absolute;
+			content: " ";
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			margin-top: 3rem;
+			width: 6rem;
+			height: 0.7rem;
+			background: @bg-border;
+		}
 	}
 }
 
@@ -418,7 +431,38 @@ a {
 		display: none;
 	}
 }
-
+/*Work*/
+.work{
+	&-box{
+		position: relative;
+		p{
+			margin-top: 6rem;
+		}
+	}
+}
+.circle{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 3rem;
+	.bold();
+	color: @bg-light;
+	background-color: @bg-border;
+	border-radius: 50%;
+	&-border{
+		position: absolute;
+		top: 50%;
+		left: 17%;
+    width: 6rem;
+    height: 6rem;
+    padding: 3px;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 4px solid @bg-border;
+		background: @bg-light;
+	}
+}
 /*Ventas modales*/
 
 .popup {
@@ -488,8 +532,11 @@ a {
 			position: absolute;
 			top: 25%;
 		}
-
-	
+	}
+	.work{
+		&-box{
+			margin-top: 3rem;
+		}
 	}
 }
 
@@ -745,5 +792,12 @@ a {
 		}
 	}
 }
-
+.work{
+	&-box{
+		text-align: center;
+	}
+}
+.circle-border{
+	left: 43%;
+}
 }
