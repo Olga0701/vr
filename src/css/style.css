@@ -33,7 +33,7 @@ section {
   padding: 10rem 0;
 }
 .section-header {
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
 }
 .section-header h2 {
   position: relative;
@@ -466,6 +466,18 @@ a:hover {
 .card p {
   min-height: 10rem;
 }
+/*Scheme*/
+.scheme-box {
+  text-align: center;
+}
+.scheme-box p {
+  margin-top: 2rem;
+}
+/*footer*/
+.footer-content {
+  height: 18rem;
+  text-align: center;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -523,6 +535,9 @@ a:hover {
   }
   .work-box {
     margin-top: 3rem;
+  }
+  .scheme-box {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 991px) {
