@@ -447,6 +447,25 @@ a:hover {
 .games-zombi {
   margin-top: 2rem;
 }
+/*Feedback*/
+.feedback {
+  background: #f8f8f0;
+}
+.feedback-img {
+  margin-bottom: 2rem;
+}
+.card {
+  margin-top: 2rem;
+  padding: 3rem;
+  min-height: 35rem;
+  border: 1px solid #18a7d0;
+}
+.card h3 {
+  margin-left: 2rem;
+}
+.card p {
+  min-height: 10rem;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -712,5 +731,14 @@ a:hover {
   }
   .circle-border {
     left: 43%;
+  }
+  .feedback-img {
+    width: 10rem;
+  }
+  .card {
+    min-height: 35rem;
+  }
+  .row > * {
+    width: auto;
   }
 }

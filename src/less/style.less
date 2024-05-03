@@ -442,6 +442,7 @@ a {
 
 	background: url(../img/work/bg.jpg) top right no-repeat;
 	background-size: 100vw;
+
 	&-box {
 		position: relative;
 
@@ -458,15 +459,19 @@ a {
 			margin-top: 1.5rem;
 		}
 	}
-&-phone{
-	width: 100%;
-	img{
+
+	&-phone {
 		width: 100%;
+
+		img {
+			width: 100%;
+		}
 	}
-}
+
 	&-vr {
 		width: 100%;
 		margin-top: 8rem;
+
 		img {
 			width: 100%;
 		}
@@ -510,45 +515,79 @@ a {
 		background: @bg-light;
 	}
 }
+
 /*Video*/
-.video{
+.video {
 	position: relative;
 	background: @bg-header url(../img/vr-bg.jpg) center center no-repeat;
 	background-size: cover;
-	&-description{
+
+	&-description {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		text-align: center;
-		p{
+
+		p {
 			font-size: 2.2rem;
 		}
-		img{
+
+		img {
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 		}
 	}
 }
+
 /*Games*/
-.games{
-	&-position{
+.games {
+	&-position {
 		display: flex;
-    justify-content: center;
+		justify-content: center;
 	}
-	&-icon{
+
+	&-icon {
 		margin-bottom: 5rem;
-		img{
+
+		img {
 			margin-left: 2rem;
 		}
 	}
-	&-img{
+
+	&-img {
 		margin-bottom: 3rem;
 	}
-	&-zombi{
+
+	&-zombi {
 		margin-top: 2rem;
 	}
 }
+
+/*Feedback*/
+.feedback {
+	background: @bg-background;
+
+	&-img {
+		margin-bottom: 2rem;
+	}
+}
+
+.card {
+	margin-top: 2rem;
+	padding: 3rem;
+	min-height: 35rem;
+	border: 1px solid @bg-border;
+
+	h3 {
+		margin-left: 2rem;
+	}
+
+	p {
+		min-height: 10rem;
+	}
+}
+
 /*Ventas modales*/
 
 .popup {
@@ -701,27 +740,31 @@ a {
 			display: inline-block;
 		}
 	}
-	
-	.work{
-		p{
+
+	.work {
+		p {
 			text-align: center;
 			font-size: 1.7rem;
 		}
-		&-vr{
+
+		&-vr {
 			margin-top: 0;
 			margin-bottom: 5rem;
 		}
 	}
-	.games{
-		p{
+
+	.games {
+		p {
 			margin-bottom: 3rem;
 		}
-		&-img{
+
+		&-img {
 			text-align: center;
 		}
-		&-header{
-			h2{
-				&::after{
+
+		&-header {
+			h2 {
+				&::after {
 					top: 85%;
 				}
 			}
@@ -922,11 +965,24 @@ a {
 
 	.work {
 		&-header {
-			text-align:center;
+			text-align: center;
 		}
 	}
 
 	.circle-border {
 		left: 43%;
 	}
+
+	.feedback {
+		&-img {
+			width: 10rem;
+		}
+	}
+.card{
+	min-height: 35rem;
+}
+	.row>* {
+		width: auto;
+	}
+
 }
