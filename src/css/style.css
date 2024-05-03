@@ -426,6 +426,27 @@ a:hover {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+/*Games*/
+.games-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.games-icon {
+  margin-bottom: 5rem;
+}
+.games-icon img {
+  margin-left: 2rem;
+}
+.games-img {
+  margin-bottom: 3rem;
+}
+.games-zombi {
+  margin-top: 2rem;
+}
 /*Ventas modales*/
 .popup {
   display: none;
@@ -546,6 +567,15 @@ a:hover {
   .work-vr {
     margin-top: 0;
     margin-bottom: 5rem;
+  }
+  .games p {
+    margin-bottom: 3rem;
+  }
+  .games-img {
+    text-align: center;
+  }
+  .games-header h2::after {
+    top: 85%;
   }
 }
 @media (max-width: 767px) {

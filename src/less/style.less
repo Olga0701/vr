@@ -530,6 +530,25 @@ a {
 		}
 	}
 }
+/*Games*/
+.games{
+	&-position{
+		display: flex;
+    justify-content: center;
+	}
+	&-icon{
+		margin-bottom: 5rem;
+		img{
+			margin-left: 2rem;
+		}
+	}
+	&-img{
+		margin-bottom: 3rem;
+	}
+	&-zombi{
+		margin-top: 2rem;
+	}
+}
 /*Ventas modales*/
 
 .popup {
@@ -691,6 +710,21 @@ a {
 		&-vr{
 			margin-top: 0;
 			margin-bottom: 5rem;
+		}
+	}
+	.games{
+		p{
+			margin-bottom: 3rem;
+		}
+		&-img{
+			text-align: center;
+		}
+		&-header{
+			h2{
+				&::after{
+					top: 85%;
+				}
+			}
 		}
 	}
 }
