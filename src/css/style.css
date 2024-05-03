@@ -407,8 +407,24 @@ a:hover {
 }
 /*Video*/
 .video {
+  position: relative;
   background: #616161 url(../img/vr-bg.jpg) center center no-repeat;
   background-size: cover;
+}
+.video-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.video-description p {
+  font-size: 2.2rem;
+}
+.video-description img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 /*Ventas modales*/
 .popup {
