@@ -475,8 +475,25 @@ a:hover {
 }
 /*footer*/
 .footer-content {
+  position: relative;
   height: 18rem;
+}
+.footer-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.footer-box p {
   text-align: center;
+}
+.footer-box p a {
+  color: #000000;
+  border-bottom: 1px dashed #000000;
+}
+.footer-end {
+  background: #000000;
 }
 /*Ventas modales*/
 .popup {
