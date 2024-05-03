@@ -587,38 +587,46 @@ a {
 		min-height: 10rem;
 	}
 }
+
 /*Scheme*/
-.scheme{
-	&-box{
+.scheme {
+	&-box {
 		text-align: center;
-		p{
+
+		p {
 			margin-top: 2rem;
 		}
 	}
 }
+
 /*footer*/
-.footer{
-	&-content{
+.footer {
+	&-content {
 		position: relative;
 		height: 18rem;
 	}
-	&-box{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	p{
-		text-align: center;
-		a{
-			color: @bg-black;
-			border-bottom: 1px dashed @bg-black;
+
+	&-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+
+		p {
+			text-align: center;
+
+			a {
+				color: @bg-black;
+				border-bottom: 1px dashed @bg-black;
+			}
 		}
 	}
-	}
-	&-end{
+
+	&-end {
 		background: @bg-black;
 	}
 }
+
 /*Ventas modales*/
 
 .popup {
@@ -695,8 +703,9 @@ a {
 			margin-top: 3rem;
 		}
 	}
-	.scheme{
-		&-box{
+
+	.scheme {
+		&-box {
 			margin-bottom: 3rem;
 		}
 	}
@@ -753,7 +762,7 @@ a {
 		}
 
 		&-img {
-			height: 30rem;
+			height: 25rem;
 			margin-bottom: 5rem;
 		}
 	}
@@ -778,15 +787,28 @@ a {
 	}
 
 	.work {
+		background: none;
+
 		p {
 			text-align: center;
 			font-size: 1.7rem;
+		}
+
+		&-box {
+			text-align: center;
 		}
 
 		&-vr {
 			margin-top: 0;
 			margin-bottom: 5rem;
 		}
+		&-footer{
+			margin-top: 10rem;
+		}
+	}
+
+	.circle-border {
+		left: 40%;
 	}
 
 	.games {
@@ -857,8 +879,6 @@ a {
 		}
 
 		&-subtitle {
-
-
 			&::after {
 				content: '';
 				position: absolute;
@@ -873,7 +893,12 @@ a {
 			}
 		}
 	}
-
+.possibilities{
+	&-img{
+		margin-bottom: none;
+		height: 30rem;
+	}
+}
 }
 
 @media(max-width:575px) {
@@ -1015,9 +1040,11 @@ a {
 			width: 10rem;
 		}
 	}
-.card{
-	min-height: 35rem;
-}
+
+	.card {
+		min-height: 35rem;
+	}
+
 	.row>* {
 		width: auto;
 	}

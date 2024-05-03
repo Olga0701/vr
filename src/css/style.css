@@ -595,7 +595,7 @@ a:hover {
     margin-bottom: 5rem;
   }
   .possibilities-img {
-    height: 30rem;
+    height: 25rem;
     margin-bottom: 5rem;
   }
   .call-box {
@@ -611,13 +611,25 @@ a:hover {
   .call-subtitle {
     display: inline-block;
   }
+  .work {
+    background: none;
+  }
   .work p {
     text-align: center;
     font-size: 1.7rem;
   }
+  .work-box {
+    text-align: center;
+  }
   .work-vr {
     margin-top: 0;
     margin-bottom: 5rem;
+  }
+  .work-footer {
+    margin-top: 10rem;
+  }
+  .circle-border {
+    left: 40%;
   }
   .games p {
     margin-bottom: 3rem;
@@ -668,6 +680,10 @@ a:hover {
     transform: translateY(-50%);
     border: 29px solid transparent;
     border-left: 14px solid #18a7d0;
+  }
+  .possibilities-img {
+    margin-bottom: none;
+    height: 30rem;
   }
 }
 @media (max-width: 575px) {
