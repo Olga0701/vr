@@ -9,4 +9,5 @@ $('.popup-close').on('click', function (event) {
 	$('.popup').fadeOut();
 });
 });
-/*Forms */
+/*Wow */
+new WOW().init();
