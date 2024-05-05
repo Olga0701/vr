@@ -767,7 +767,7 @@ a:hover {
     height: 25rem;
   }
   .call {
-    margin-left: 4%;
+    margin-left: 2%;
   }
   .call-subtitle::after {
     content: '';
@@ -790,6 +790,9 @@ a:hover {
   }
   .card {
     min-height: 35rem;
+  }
+  .games-position {
+    margin-left: 25%;
   }
   .row > * {
     width: auto;
