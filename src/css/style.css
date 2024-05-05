@@ -434,6 +434,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 5rem;
 }
 .games-icon {
   margin-bottom: 5rem;
@@ -753,6 +754,7 @@ a:hover {
     min-height: auto;
   }
   .description-set {
+    margin-left: 25%;
     margin-top: 30rem;
   }
   .possibilities h3 {
@@ -763,6 +765,9 @@ a:hover {
   }
   .possibilities-img {
     height: 25rem;
+  }
+  .call {
+    margin-left: 4%;
   }
   .call-subtitle::after {
     content: '';
@@ -775,7 +780,7 @@ a:hover {
     border-left: 14px solid #18a7d0;
   }
   .work-header {
-    text-align: center;
+    margin-left: 17%;
   }
   .circle-border {
     left: 43%;
